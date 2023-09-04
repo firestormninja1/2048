@@ -6,7 +6,6 @@
  */
 !(function($) {
     "use strict";
-
     // Smooth scroll for the navigation menu and links with .scrollto classes
     var scrolltoOffset = $('#header').outerHeight() - 15;
     $(document).on('click', '.nav-menu a, .mobile-nav a, .scrollto', function(e) {
@@ -23,7 +22,7 @@
 
                 $('html, body').animate({
                     scrollTop: scrollto
-                }, 1500, 'easeInOutExpo');
+                }, 750, 'easeInOutExpo');
 
                 if ($(this).parents('.nav-menu, .mobile-nav').length) {
                     $('.nav-menu .active, .mobile-nav .active').removeClass('active');
