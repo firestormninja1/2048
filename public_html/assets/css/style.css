@@ -114,7 +114,18 @@
 .modal-header h2 {
     font-size: 20px;
 }
+/*--------------------------------------------------------------
+# Custom Styling
+-----------------------------\---------------------------------*/
 
+.custom-col {
+    flex: 0 0 20%; /* Override Bootstrap's flex-basis */
+    max-width: calc(20% * 5);; /* Override Bootstrap's max-width */
+}
+
+.custom-dropdown {
+    z-index:10000000;
+}
 
 /*--------------------------------------------------------------
 # General
@@ -735,6 +746,7 @@ section {
     padding-top: 10vh;
     padding-bottom: 0%;
 }
+
 .btn-covid{
     font-family: "Raleway", sans-serif;
     font-weight: 500;
