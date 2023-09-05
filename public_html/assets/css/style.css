@@ -122,15 +122,19 @@
     display: block; /* Override Bootstrap's default 'display: none' */
     visibility: hidden; /* Hide the dropdown */
     opacity: 0; /* Make it transparent */
-    transform: translateY(-10px); /* Move it up a bit */
-    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s; /* Add transitions */
+    transition: opacity 0.3s ease, visibility 0.3s; /* Add transitions */
+}
+
+/* Optional: Change the cursor to a pointer for the dropdown toggle */
+.nav-menu .dropdown-toggle:hover {
+    cursor: pointer;
 }
 
 /* Show and animate dropdown on hover */
 .nav-menu .dropdown:hover .dropdown-menu {
     visibility: visible; /* Show the dropdown */
     opacity: 1; /* Make it fully visible */
-    transform: translateY(0); /* Reset the position */
+
 }
 
 /* Add padding to the right side of the dropdown text */
@@ -143,6 +147,7 @@
     transform: rotate(-90deg); /* Rotate the arrow 90 degrees to make it sideways */
     transition: transform 0.3s ease; /* Add transition for smooth rotation */
     display: inline-block; /* Ensures consistent spacing */
+    font-size: 15px;
 }
 
 /* Rotate the arrow on hover */
@@ -161,7 +166,7 @@
 
 /* Center the dropdown menu */
 .custom-dropdown .dropdown-menu {
-    left: 12%;  /* Move the starting point to the center of the parent */
+    left: 12% !important;  /* Move the starting point to the center of the parent */
     /* transform: translateX(-12%);  Shift it back by half of its width */
 }
 

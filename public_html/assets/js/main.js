@@ -55,6 +55,20 @@
         }
     });
 
+
+    // dropdown animation limiter
+    $(document).ready(function() {
+        $('.dd-custom').on('click', function() {
+            var dropdownMenu = $(this).next('.dropdown-menu');
+            if (dropdownMenu.is(':visible')) {
+                dropdownMenu.addClass('no-transition');
+            } else {
+                dropdownMenu.removeClass('no-transition');
+            }
+        });
+    });
+
+
     // Mobile Navigation
     if ($('.nav-menu').length) {
         var $mobile_nav = $('.nav-menu').clone().prop({
