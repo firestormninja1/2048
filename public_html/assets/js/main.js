@@ -6,9 +6,11 @@
  */
 !(function($) {
     "use strict";
-
     // Smooth scroll for the navigation menu and links with .scrollto classes
     var scrolltoOffset = $('#header').outerHeight() - 15;
+    var scrollTimeNavBar = 750;
+    var scrollTimeArrowUp = 700;
+
     $(document).on('click', '.nav-menu a, .mobile-nav a, .scrollto', function(e) {
         if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
             var target = $(this.hash);
@@ -23,7 +25,7 @@
 
                 $('html, body').animate({
                     scrollTop: scrollto
-                }, 1500, 'easeInOutExpo');
+                }, scrollTimeNavBar, 'easeInOutExpo');
 
                 if ($(this).parents('.nav-menu, .mobile-nav').length) {
                     $('.nav-menu .active, .mobile-nav .active').removeClass('active');
@@ -48,7 +50,7 @@
                 var scrollto = $(initial_nav).offset().top - scrolltoOffset;
                 $('html, body').animate({
                     scrollTop: scrollto
-                }, 1500, 'easeInOutExpo');
+                }, scrollTimeArrowUp, 'easeInOutExpo');
             }
         }
     });
