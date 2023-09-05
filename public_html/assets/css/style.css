@@ -162,62 +162,9 @@
 /* Center the dropdown menu */
 .custom-dropdown .dropdown-menu {
     left: 12%;  /* Move the starting point to the center of the parent */
-    transform: translateX(-12%);  /* Shift it back by half of its width */
+    /* transform: translateX(-12%);  Shift it back by half of its width */
 }
 
-#international h1 {
-    margin: 0 0 10px 0;
-    font-size: 48px;
-    font-weight: 700;
-    line-height: 56px;
-    color: black;
-}
-
-#international h2 {
-    color: #484848;
-    margin-bottom: 50px;
-    font-size: 24px;
-}
-
-#international .btn-get-started {
-    font-family: "Raleway", sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    letter-spacing: 1px;
-    display: inline-block;
-    padding: 10px 30px;
-    border-radius: 50px;
-    transition: 0.5s;
-    color: #2262ed;
-    border: 2px solid #2262ed;
-}
-
-#international .btn-get-started:hover {
-    background: #2262ed;
-    color: #fff;
-}
-
-#international .btn-dropdown {
-    font-family: "Raleway", sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    letter-spacing: 1px;
-    display: inline-block;
-    padding: 10px 30px;
-    border-radius: 50px;
-    transition: 0.5s;
-    color: #2262ed;
-    border: 2px solid #2262ed;
-}
-
-#international .btn-dropdown:hover {
-    background: #2262ed;
-    color: #fff;
-}
-
-#international .animated {
-    animation: up-down 2s ease-in-out infinite alternate-reverse both;
-}
 
 /*--------------------------------------------------------------
 # General
@@ -1089,7 +1036,7 @@ section {
 .services .description {
     font-size: 15px;
     line-height: 28px;
-    margin-bottom: 0;
+    margin-bottom: 0px;
 }
 
 .services .icon-box:hover .title a,
@@ -2042,24 +1989,69 @@ section {
     margin-left: 25%;
 }
 
-@media screen and (max-width: 768px) {
-    .section-title h2{
-        font-size: 24px;
-        width: 100%;
-        display: block;
-    }
-    .int-covid-img{
-        max-width: 100%;
-        height: fit-content;
-        margin-left: 12.5%;
-    }
+#international {
+    padding-top:0px;
 }
 
-.int-section-title {
-    text-align: center;
-    padding: 50px;
+#international h1 {
+    margin: 0 0 2px 0;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 56px;
+    color: black;
 }
 
+#international h2 {
+    color: #000000;
+    margin-bottom: 10px;
+    margin-top:30px;
+    font-size: 32px;
+}
+
+#international .btn-register {
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 50px;
+    transition: 0.5s;
+    color: #2262ed;
+    border: 2px solid #2262ed;
+}
+
+#international .btn-register:hover {
+    background: #2262ed;
+    color: #fff;
+}
+
+#international .btn-dropdown {
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 50px;
+    transition: 0.5s;
+    color: #2262ed;
+    border: 2px solid #2262ed;
+}
+
+#international .btn-dropdown:hover {
+    background: #2262ed;
+    color: #fff;
+}
+
+#international .animated {
+    animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+
+.int-header {
+    font-size: 24px;
+    color: #000000;
+}
 
 /*--------------------------------------------------------------
 # Footer
