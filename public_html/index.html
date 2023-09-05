@@ -26,6 +26,7 @@
     <link href="assets/css/style.css" rel="stylesheet">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-JL873VWPVP"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
@@ -53,7 +54,15 @@
             <nav class="nav-menu d-none d-lg-block">
                 <ul>
                     <li class="active"><a href="index.html">Home</a></li>
-                    <li><a href="#services">About</a></li>
+                    <li class="dropdown custom-dropdown">
+                        <a href="#services" class="dropdown-toggle dd-custom" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Health and Wellbeing Support <span class="arrow">&#9662;</span></span></a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item px-lg-3 px-md-3 px-2" href="https://www.imperial.ac.uk/health-and-wellbeing/" target="_blank">Imperial College London</a>
+                            <a class="dropdown-item px-lg-3 px-md-3 px-2" href="https://unihub.mdx.ac.uk/support/health-and-wellbeing" target="_blank">University Of Middlesex</a>
+                            <a class="dropdown-item px-lg-3 px-md-3 px-2" href="https://www.westminster.ac.uk/current-students/support-and-services/student-wellbeing" target="_blank">University of Westminster</a>
+                            <!-- Add more sublinks as needed -->
+                        </div>
+                    </li>
                     <li><a href="#features">Services</a></li>
                     <li><a href="#team">Our Team</a></li>
                     <li><a href="#testimonials">Testimonials</a></li>
@@ -407,7 +416,7 @@
                     </div>
                 </div>
                 <div class="d-flex justify-content-center mt-5">
-                    <a href="https://gp-registration.nhs.uk/E84003/gpregistration/landing" class="text-center btn-get-started">Register Now</a>
+                    <a href="https://gp-registration.nhs.uk/E84003/gpregistration/landing" target="_blank"class="text-center btn-get-started">Register Now</a>
                 </div>
             </div>
             

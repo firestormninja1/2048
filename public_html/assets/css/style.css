@@ -117,22 +117,52 @@
 /*--------------------------------------------------------------
 # Custom Styling
 -----------------------------\---------------------------------*/
-
-.custom-col {
-    flex: 0 0 20%; /* Override Bootstrap's flex-basis */
-    max-width: calc(20% * 5);; /* Override Bootstrap's max-width */
+/* Initial state: Move the dropdown up and make it transparent */
+.nav-menu .dropdown-menu {
+    display: block; /* Override Bootstrap's default 'display: none' */
+    visibility: hidden; /* Hide the dropdown */
+    opacity: 0; /* Make it transparent */
+    transform: translateY(-10px); /* Move it up a bit */
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s; /* Add transitions */
 }
+
+/* Show and animate dropdown on hover */
+.nav-menu .dropdown:hover .dropdown-menu {
+    visibility: visible; /* Show the dropdown */
+    opacity: 1; /* Make it fully visible */
+    transform: translateY(0); /* Reset the position */
+}
+
+/* Add padding to the right side of the dropdown text */
+.nav-menu .dropdown-toggle {
+    padding-right: 2%; /* Adjust the value as needed */
+}
+
+/* Style for the arrow */
+.arrow {
+    transform: rotate(-90deg); /* Rotate the arrow 90 degrees to make it sideways */
+    transition: transform 0.3s ease; /* Add transition for smooth rotation */
+    display: inline-block; /* Ensures consistent spacing */
+}
+
+/* Rotate the arrow on hover */
+.nav-menu .dropdown:hover .arrow {
+    transform: rotate(0deg); /* Rotate the arrow 90 degrees to make it sideways */
+}
+
+.dd-custom::after {
+    display: none; /* Hide the default arrow */
+}
+
 
 .custom-dropdown {
     z-index:2;
 }
 
-.underlined-heading {
-    text-decoration: underline;
-    text-decoration-color: blue;
-    text-underline-offset: 0.2em;  /* Adjust the distance from the text */
-    text-decoration-thickness: 2px; /* Adjust the thickness of the underline */
-    padding:5px;
+/* Center the dropdown menu */
+.custom-dropdown .dropdown-menu {
+    left: 12%;  /* Move the starting point to the center of the parent */
+    transform: translateX(-12%);  /* Shift it back by half of its width */
 }
 
 #international h1 {
