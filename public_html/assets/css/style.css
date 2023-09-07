@@ -117,6 +117,19 @@
 /*--------------------------------------------------------------
 # Custom Styling
 -----------------------------\---------------------------------*/
+.photo-h1{
+    font-size: 28px;
+}
+
+.photo-h2 {
+    font-size: 21px;
+}
+
+
+.iphoto-h3{
+    font-size: 2px;
+}
+
 /* Initial state: Move the dropdown up and make it transparent */
 .nav-menu .dropdown-menu {
     display: block; /* Override Bootstrap's default 'display: none' */
