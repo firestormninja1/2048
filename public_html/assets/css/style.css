@@ -206,6 +206,7 @@
     display: flex;
     flex-direction: column; /* This stacks the content of the card vertically */
     justify-content: space-between; /* This pushes the content apart, placing the button at the bottom */
+    border-radius: 20px;
 }
 .Uni-Wellbeing {
     display: flex;
