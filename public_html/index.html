@@ -424,10 +424,10 @@
                 <div class="row align-items-center justify-content-center" data-aos="fade" data-aos-delay="50">
                     <!-- Heading and Subheading -->
                     <div class="col-md-6 text-center">
-                        <p style="font-size: 30px;">Find us on campus at Hendon, Middlesex University, at the NLRAC on Tuesday AM + Friday AM, during term time <a href="https://www.google.com/maps?q=51.59055677575864,-0.22973385767221588" target="_blank"><i class="ri-map-pin-fill" style="color:#5faee3"></i></a></p>
-                        <p style="font-size: 23px;">We will also have a Nurse clinic (blood and vaccinations) on the second and fourth Tuesdays per month</p>
+                        <p style="font-size: 28px;">Find us on campus at Hendon, Middlesex University, at the NLRAC on Tuesday AM & Friday AM, during term time <a href="https://www.google.com/maps?q=51.59055677575864,-0.22973385767221588" target="_blank"><i class="ri-map-pin-fill" style="color:#5faee3"></i></a></p>
+                        <p style="font-size: 20px;">We will also have a Nurse clinic (blood and vaccinations) on the second and fourth Tuesdays per month</p>
                         <p style="font-size: 17px;">View and/or download a copy of our Academic Calendar for 2023/2024 <a href="assets/docs/tud_calendar.pdf" target="_blank">here</a></p>
-                        <p style="font-size: 14.5px;">Urgent face to face/telephone appointments are available at Premier Medical Centre, Wembley site all week. <a href="https://www.google.com/maps?q=51.55026230906345, -0.3061880315475773" target="_blank"><i class="ri-map-pin-fill" style="color:#5faee3"></i></a></p>
+                        <p style="font-size: 13px;">Urgent face to face/telephone appointments are available at Premier Medical Centre, Wembley site all week. <a href="https://www.google.com/maps?q=51.55026230906345, -0.3061880315475773" target="_blank"><i class="ri-map-pin-fill" style="color:#5faee3"></i></a></p>
                     </div>
                     
                     <!-- Photo -->
@@ -459,7 +459,7 @@
                     <h2 class="int-header">University Wellbeing</h2>
                 </div>
             
-                <div class="row justify-content-center">
+                <div class="row uni-row justify-content-center ">
                     <!-- Middlesex University Card -->
                     <div class="col-lg-4 text-center uni-card mb-4 mr-md-5 d-flex flex-column justify-content-between">
                         <img src="assets/img/uni_crests/ICL.jpg" alt="Description of Image 2" class="img-fluid uni-img-fluid mb-3 mx-auto">
@@ -1108,5 +1108,32 @@
     <!-- Template Main JS File -->
     <script src="assets/js/main.js "></script>
 </body>
+<script>
+    $(document).ready(function() {
+        
+        // Function to adjust the card heights
+        function adjustCardHeights() {
+            // Reset all card heights to auto first
+            $('.uni-card').css('height', 'auto');
+    
+            // Find the tallest card
+            var tallestCard = 0;
+            $('.uni-card').each(function() {
+                if ($(this).height() > tallestCard) {
+                    tallestCard = $(this).height();
+                }
+            });
+    
+            // Set all cards to the height of the tallest card
+            $('.uni-card').height(tallestCard);
+        }
+    
+        // Call the function initially
+        adjustCardHeights();
+    
+        // Call the function whenever the window is resized
+        $(window).resize(adjustCardHeights);
+    });
+</script>
 
 </html>

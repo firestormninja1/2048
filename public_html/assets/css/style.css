@@ -194,7 +194,19 @@
 /*--------------------------------------------------------------
 # Univiersity Wellbeing Page
 --------------------------------------------------------------*/
+/* This ensures the row is a flex container */
+.uni-row {
+    display: flex;
+    flex-wrap: wrap; /* This allows the cards to wrap to the next line on smaller screens */
+    justify-content: center; /* This centers the cards */
+}
 
+/* This ensures each card stretches to fill the container */
+.uni-card {
+    display: flex;
+    flex-direction: column; /* This stacks the content of the card vertically */
+    justify-content: space-between; /* This pushes the content apart, placing the button at the bottom */
+}
 .Uni-Wellbeing {
     display: flex;
     justify-content: space-between;
