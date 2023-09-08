@@ -117,78 +117,22 @@
 /*--------------------------------------------------------------
 # Custom Styling
 -----------------------------\---------------------------------*/
-.photo-h1{
-    font-size: 28px;
-}
-
-.photo-h2 {
-    font-size: 21px;
-}
-
-
-.iphoto-h3{
-    font-size: 2px;
-}
-
-/* Initial state: Move the dropdown up and make it transparent */
-.nav-menu .dropdown-menu {
-    display: block; /* Override Bootstrap's default 'display: none' */
-    visibility: hidden; /* Hide the dropdown */
-    opacity: 0; /* Make it transparent */
-    transition: opacity 0.3s ease, visibility 0.3s; /* Add transitions */
-}
-
-/* Optional: Change the cursor to a pointer for the dropdown toggle */
-.nav-menu .dropdown-toggle:hover {
-    cursor: pointer;
-}
-
-/* Show and animate dropdown on hover */
-.nav-menu .dropdown:hover .dropdown-menu {
-    visibility: visible; /* Show the dropdown */
-    opacity: 1; /* Make it fully visible */
-
-}
-
-/* Add padding to the right side of the dropdown text */
-.nav-menu .dropdown-toggle {
-    padding-right: 2%; /* Adjust the value as needed */
-}
-
-/* Style for the arrow */
-.arrow {
-    transform: rotate(-90deg); /* Rotate the arrow 90 degrees to make it sideways */
-    transition: transform 0.3s ease; /* Add transition for smooth rotation */
-    display: inline-block; /* Ensures consistent spacing */
-    font-size: 15px;
-}
-
-/* Rotate the arrow on hover */
-.nav-menu .dropdown:hover .arrow {
-    transform: rotate(0deg); /* Rotate the arrow 90 degrees to make it sideways */
-}
-
-.dd-custom::after {
-    display: none; /* Hide the default arrow */
-}
-
-
-.custom-dropdown {
-    z-index:2;
-}
-
-/* Center the dropdown menu */
-.custom-dropdown .dropdown-menu {
-    left: 12% !important;  /* Move the starting point to the center of the parent */
-    /* transform: translateX(-12%);  Shift it back by half of its width */
-}
-
 .appt-video{
     position: relative;
     padding-bottom: 50%;
     height: 0;
     overflow:hidden;
     margin: auto;
+}
+
+.custom-dropdown {
+    z-index: 2;
+}
+
+.dropdown-menu .custom-dropdown .dropdown-menu{
+    left: 50%; /* Move the starting point of the dropdown to the middle of the button */
+    transform: translateX(-50%); /* Shift the dropdown back by half of its width */
+    /* ... other styles ... */
 }
 
 /*--------------------------------------------------------------
@@ -236,6 +180,7 @@
 .uni-card:hover {
     transform: scale(1.05); /* enlarges the card by 10% */
 }
+
 /* Mobile and tablet adjustments */
 @media (max-width: 992px) {
     .uni-card {
@@ -243,8 +188,7 @@
     }
 }
 
-
-#uniWellbeing .btn-register {
+.btn-learn-more {
     font-family: "Raleway", sans-serif;
     font-weight: 500;
     font-size: 13px;
@@ -257,13 +201,16 @@
     border: 2px solid #2262ed;  
 }
 
-#uniWellbeing .btn-register:hover {
-    transform: scale(1.09); /* enlarges the card by 10% */
+.btn-learn-more:focus {
+    background-color: #ffffff; /* Restore to original background color */
+    color: #3461e5; /* Restore to original text color */
+    outline: none; /* Remove the default browser outline */
 }
 
-#uniWellbeing .btn-register:hover {
-    background: #2262ed;
-    color: #fff;
+.btn-learn-more:hover, .btn-learn-more:focus:hover {
+    background-color: #3461e5; /* Slightly darker shade for hover effect */
+    color: #ffffff;
+    text-decoration: none;
 }
 
 #uniWellbeing .animated {
