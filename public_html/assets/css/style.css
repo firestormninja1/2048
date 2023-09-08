@@ -1493,7 +1493,17 @@ section {
 /*--------------------------------------------------------------
 # Team
 --------------------------------------------------------------*/
+.member-img {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;     /* Center vertically */          /* Take full height of the container */
+}
 
+.member-img img {
+    width: 250px;
+    height: auto;
+    max-height: 100%;        /* Ensure the image doesn't overflow vertically */
+}
 .team .member {
     margin-bottom: 20px;
     overflow: hidden;
