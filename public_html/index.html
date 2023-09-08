@@ -28,6 +28,8 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-JL873VWPVP"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/uni-card.js"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
@@ -55,15 +57,7 @@
             <nav class="nav-menu d-none d-lg-block">
                 <ul>
                     <li class="active"><a href="index.html">Home</a></li>
-                    <li class="dropdown btn-group custom-dropdown">
-                        <a class="dropdown-toggle dd-custom" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="arrow">&#9662;</span>&nbsp; Health and Wellbeing Support </a>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item px-lg-3 px-md-3 px-2" href="https://www.imperial.ac.uk/health-and-wellbeing/" target="_blank">Imperial College London</a>
-                            <a class="dropdown-item px-lg-3 px-md-3 px-2" href="https://unihub.mdx.ac.uk/support/health-and-wellbeing" target="_blank">University Of Middlesex</a>
-                            <a class="dropdown-item px-lg-3 px-md-3 px-2" href="https://www.westminster.ac.uk/current-students/support-and-services/student-wellbeing" target="_blank">University of Westminster</a>
-                            <!-- Add more sublinks as needed -->
-                        </div>
-                    </li>
+                    <li><a href="#uniWellbeing">Health and Wellbeing Support</a></li>                    
                     <li><a href="#features">Services</a></li>
                     <li><a href="#team">Our Team</a></li>
                     <li><a href="#testimonials">Testimonials</a></li>
@@ -382,43 +376,41 @@
         <!-- ======= Student Registration ======= --> 
         <section id="international" class="international">
             <div class="container">
-                <div class="section-title" data-aos="fade-up ">
+                <div class="section-title" data-aos="fade">
                     <h2 class="int-header">Student Registration</h2>
                 </div>
                 <!-- First Row -->
-                <div class="row align-items-center" data-aos="fade-left" data-aos-delay="50">
+                <div class="row d-flex align-items-center" data-aos="fade-left" data-aos-delay="20">
                     <!-- Photo -->
-                    <div class="col-md-6">
-                        <img src="assets/img/gp.jpg" alt="Description of Image 1" class="img-fluid">
+                    <div class="col-md-6 order-2 order-md-1">
+                        <img src="assets/img/gp.jpg" alt="Description of Image 1" class="img-fluid responsive-img">
                     </div>
                     <!-- Heading and Subheading -->
-                    <div class="col-md-6">
+                    <div class="col-md-6 order-2 order-md-1">
                         <p class="int-header">Prioritise <b>Your Health</b> With Us</p>
-                        <p>It is important to register with a GP incase you need hospital/specialist treatment. Step into a world where your well-being is at the forefront. Partner with us and <b>access top-tier healthcare services tailored for you</b>.</p>
+                        <p>It is important to register with a GP in case you need hospital/specialist treatment. Step into a world where your well-being is at the forefront. Partner with us and <b>access top-tier healthcare services tailored for you</b>.</p>
                     </div>
                 </div>
-            
+        
                 <!-- Spacer -->
                 <div class="my-5"></div>
-            
+        
                 <!-- Second Row -->
-                <div class="row align-items-center" data-aos="fade-right" data-aos-delay="50">
+                <div class="row d-flex align-items-center" data-aos="fade-right" data-aos-delay="20">
+                    <!-- Photo -->
+                    <div class="col-md-6 order-1 order-md-2">
+                        <img src="assets/img/uni-students2.jpg" alt="Description of Image 2" class="img-fluid responsive-img">
+                    </div>
                     <!-- Heading and Subheading -->
-                    <div class="col-md-6">
+                    <div class="col-md-6 order-2 order-md-1">
                         <p class="int-header">We Are Accepting <b>International Students</b></p>
                         <p>Dive into a seamless registration process. Our registration is open to all, <b>including international students</b>. No paperwork, no fuss. Join a thriving community of hundreds who've already made the smart choice. <span style="background-color: #5faee3; color: white; padding: 0px 5px 1px 5px;"><b>No NHS number needed</b></span> – we will arrange this for you</p>
                     </div>
-                    
-                    <!-- Photo -->
-                    <div class="col-md-6">
-                        <img src="assets/img/uni-students2.jpg" alt="Description of Image 2" class="img-fluid">
-                    </div>
                 </div>
-                <div class="d-flex justify-content-center mt-4">
-                    <a href="https://form.jotform.com/232422954184356" target="_blank"class="text-center btn-register">Register Now</a>
+                <div class="d-flex justify-content-center mt-4" data-aos="fade" data-aos-delay="20">
+                    <a href="https://form.jotform.com/232422954184356" target="_blank" class="text-center btn-register">Register Now</a>
                 </div>
             </div>
-            
         </section>
         <!-- End Student Registration Section -->
 
@@ -429,17 +421,17 @@
                     <h2 class="int-header">Our Next Clinics</h2>
                 </div>
                 <!-- Second Row -->
-                <div class="row align-items-center" data-aos="fade" data-aos-delay="50">
+                <div class="row align-items-center justify-content-center" data-aos="fade" data-aos-delay="50">
                     <!-- Heading and Subheading -->
-                    <div class="col-md-6">
-                        <p style="font-size: 30px;">Find us on on campus at Hendon, Middlesex University, at the NLRAC on Tuesday AM + Fiday AM, during term time <a href="https://www.google.com/maps?q=51.59055677575864,-0.22973385767221588" target="_blank"><i class="ri-map-pin-fill" style="color:#5faee3"></a></i></p>
+                    <div class="col-md-6 text-center">
+                        <p style="font-size: 30px;">Find us on campus at Hendon, Middlesex University, at the NLRAC on Tuesday AM + Friday AM, during term time <a href="https://www.google.com/maps?q=51.59055677575864,-0.22973385767221588" target="_blank"><i class="ri-map-pin-fill" style="color:#5faee3"></i></a></p>
                         <p style="font-size: 23px;">We will also have a Nurse clinic (blood and vaccinations) on the second and fourth Tuesdays per month</p>
                         <p style="font-size: 17px;">View and/or download a copy of our Academic Calendar for 2023/2024 <a href="assets/docs/tud_calendar.pdf" target="_blank">here</a></p>
-                        <p style="font-size: 14.5px;">Urgent face to face/telephone appointments are available at Premier Medical Centre, Wembley site all week. <a href="https://www.google.com/maps?q=51.55026230906345, -0.3061880315475773" target="_blank"><i class="ri-map-pin-fill" style="color:#5faee3"></a></i></p>
+                        <p style="font-size: 14.5px;">Urgent face to face/telephone appointments are available at Premier Medical Centre, Wembley site all week. <a href="https://www.google.com/maps?q=51.55026230906345, -0.3061880315475773" target="_blank"><i class="ri-map-pin-fill" style="color:#5faee3"></i></a></p>
                     </div>
                     
                     <!-- Photo -->
-                    <div class="col-md-6">
+                    <div class="col-md-6 text-center">
                         <img src="assets/img/nlrac.png" alt="Description of Image 2" class="img-fluid">
                     </div>
                 </div>
@@ -449,19 +441,47 @@
 
         <!-- ======= How to Book an Appointment ======= --> 
         <section id="clinics" class="clinics">
-            <!-- Assuming Bootstrap CSS is already included in your project -->
-            <!-- Assuming Bootstrap CSS is already included in your project -->
-
             <div class="container">
-                <div class="section-title" data-aos="fade-up ">
+                <div class="section-title" data-aos="fade-up">
                     <h2 class="int-header">How to Book an Appointment</h2>
                 </div>
-                <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+                <div class="video-container" style="width: 77%; margin: auto; height: 36.5vw; position: relative; overflow: hidden;">
                     <iframe src="https://www.youtube.com/embed/FrHb5XglLBY?enablejsapi=1&modestbranding=1&showinfo=0&controls=1&rel=0" frameborder="0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
                 </div>
-                
             </div>
+        </section>     
+        <!-- end of How to Book an Appointment -->
 
+        <!-- ======= University Wellbeing TODO ======= --> 
+        <section id="uniWellbeing" class="Uni-Wellbeing">
+            <div class="container">
+                <div class="section-title" data-aos="fade" data-aos-delay="10">
+                    <h2 class="int-header">University Wellbeing</h2>
+                </div>
+            
+                <div class="row justify-content-center">
+                    <!-- Middlesex University Card -->
+                    <div class="col-lg-4 text-center uni-card mb-4 mr-md-5 d-flex flex-column justify-content-between">
+                        <img src="assets/img/uni_crests/ICL.jpg" alt="Description of Image 2" class="img-fluid uni-img-fluid mb-3 mx-auto">
+                        <p>"At Imperial, mental health is a priority. Our new strategy ensures timely support and advice for both students and staff."</p>
+                        <a href="https://form.jotform.com/232422954184356" target="_blank" class="text-center btn-register">Learn more</a>
+                    </div>
+                    
+                    <!-- Middlesex University Card -->
+                    <div class="col-lg-4 text-center uni-card mb-4 mr-md-5 d-flex flex-column justify-content-between">
+                        <img src="assets/img/uni_crests/MiddU.png" alt="Description of Image 2" class="img-fluid uni-img-fluid mb-3 mx-auto">
+                        <p>"At #TeamMDX, we promote proactive self-care for total well-being, echoing the World Health Organisation's definition of health."</p>
+                        <a href="https://form.jotform.com/232422954184356" target="_blank" class="text-center btn-register">Learn more</a>
+                    </div>
+                    
+                    <!-- University of Westminster Card -->
+                    <div class="col-lg-4 text-center uni-card mb-4 d-flex flex-column justify-content-between">
+                        <img src="assets/img/uni_crests/WMU.jpg" alt="Description of Image 3" class="img-fluid uni-img-fluid mb-3 mx-auto">
+                        <p>"Our goal is to support your well-being throughout your studies. We recognize the pressures of student life and offer services to help with your physical, mental, and emotional health."</p>
+                        <a href="https://form.jotform.com/232422954184356" target="_blank" class="text-center btn-register">Learn more</a>
+                    </div>
+                </div>
+            </div>
         </section>
         <!-- end of How to Book an Appointment -->
 

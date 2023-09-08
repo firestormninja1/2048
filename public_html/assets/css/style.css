@@ -183,7 +183,79 @@
     /* transform: translateX(-12%);  Shift it back by half of its width */
 }
 
+.appt-video{
+    position: relative;
+    padding-bottom: 50%;
+    height: 0;
+    overflow:hidden;
+    margin: auto;
+}
 
+/*--------------------------------------------------------------
+# Univiersity Wellbeing Page
+--------------------------------------------------------------*/
+
+.Uni-Wellbeing {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.uni-card {
+    border: 1px solid #eaeaea; /* faint outline */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* shadow */
+    padding: 15px;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer; /* indicates it's clickable */
+    text-align: center;
+    margin: 5px 20px 0px 20px;
+    width: 300px; /* adjust as needed */
+    height:100%;
+}
+
+.uni-card-content {
+    flex: 1; /* This will make the content grow to take up available space */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* This will push the button to the bottom */
+}
+
+.uni-card:hover {
+    transform: scale(1.05); /* enlarges the card by 10% */
+}
+/* Mobile and tablet adjustments */
+@media (max-width: 992px) {
+    .uni-card {
+        margin-bottom: 20px;
+    }
+}
+
+
+#uniWellbeing .btn-register {
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 5px 15px;
+    border-radius: 50px;
+    transition: 0.5s;
+    color: #2262ed;
+    border: 2px solid #2262ed;  
+}
+
+#uniWellbeing .btn-register:hover {
+    transform: scale(1.09); /* enlarges the card by 10% */
+}
+
+#uniWellbeing .btn-register:hover {
+    background: #2262ed;
+    color: #fff;
+}
+
+#uniWellbeing .animated {
+    animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
 /*--------------------------------------------------------------
 # General
 -----------------------------\---------------------------------*/
@@ -2040,6 +2112,10 @@ section {
 }
 
 #international .btn-register:hover {
+    transform: scale(1.09); /* enlarges the card by 10% */
+}
+
+#international .btn-register:hover {
     background: #2262ed;
     color: #fff;
 }
@@ -2069,6 +2145,12 @@ section {
 .int-header {
     font-size: 24px;
     color: #000000;
+}
+
+.responsive-img {
+    width: 100%;
+    height: auto;
+    max-height: 100%;
 }
 
 /*--------------------------------------------------------------
