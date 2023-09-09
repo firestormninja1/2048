@@ -1,23 +1,17 @@
-import os
+def maxPresentations(sT, sE):
+    #[1, 1, 2, 3]
+    #[2, 3, 3, 4]
+    
+    #1) brute force each possible
+    next_available = float('infinity')
+    attendable = 0
+    for i in range(len(sT)):
+        start_time = sT[i]
+        end_time = sE[i]
+        
+        if start_time < next_available:
+            attendable += 1
+            next_available = end_time
+    return attendable
 
-folder = '/public_html/assets/img/team'
-path = os.getcwd() + folder
-
-text="""
-<div class="col-lg-3 col-md-6 d-flex align-items-stretch ">
-    <div class="member " data-aos="fade-up " data-aos-delay="400 ">
-        <div class="member-img ">
-            <img src="assets/img/team/bhavika.png" class="img-fluid " alt=" ">
-        </div>
-        <div class="member-info ">
-            <h4>Bhavika Ashwin</h4>
-            <span>Receptionist</span>
-        </div>
-    </div>
-</div>
-"""
-
-for name in os.listdir(path):
-    t = text.replace('bhavika.png',name)
-    t = t.replace('Bhavika Ashwin',name.replace('.jpg',''))
-    print(t)
+print(maxPresentations([6,1,2,3],[8,9,4,7]))

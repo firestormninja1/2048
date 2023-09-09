@@ -191,7 +191,7 @@
 }
 
 .uni-card:hover {
-    transform: scale(1.05); /* enlarges the card by 10% */
+    transform: scale(1.065); /* enlarges the card by 10% */
 }
 
 /* Mobile and tablet adjustments */
