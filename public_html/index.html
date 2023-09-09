@@ -56,9 +56,9 @@
             <!-- .nav-menu -->
             <nav class="nav-menu d-none d-lg-block">
                 <ul>
-                    <li class="active"><a href="index.html">Home</a></li>
-                    <li><a href="#uniWellbeing">Health and Wellbeing Support</a></li>                    
+                    <li class="active"><a href="index.html">Home</a></li>                  
                     <li><a href="#features">Services</a></li>
+                    <li><a href="#uniWellbeing">Health and Wellbeing Support</a></li>  
                     <li><a href="#team">Our Team</a></li>
                     <li><a href="#testimonials">Testimonials</a></li>
                     <li><a href="#faq">FAQ</a></li>
