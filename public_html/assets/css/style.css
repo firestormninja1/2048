@@ -117,12 +117,25 @@
 /*--------------------------------------------------------------
 # Custom Styling
 -----------------------------\---------------------------------*/
+
+.appt-container{
+    position: relative; 
+    padding-bottom: 56.25%; 
+    height: 0; 
+    overflow: hidden;
+}
+
 .appt-video{
-    position: relative;
-    padding-bottom: 50%;
-    height: 0;
-    overflow:hidden;
-    margin: auto;
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+}
+
+@media (min-width:885px){
+    .appt-container{
+        position: relative; padding-bottom: 45%; height: 0; overflow: hidden; margin: auto;
+    }
+    .appt-video{
+        position: absolute; top: 0; left: 10%; width: 80%; height: 100%;
+    }
 }
 
 .custom-dropdown {

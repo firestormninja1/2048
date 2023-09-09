@@ -37,7 +37,30 @@
         gtag('config', 'G-JL873VWPVP');
     </script>
 </head>
-
+<script>
+    $(document).ready(function() {
+        
+        // Function to adjust the card heights
+        function adjustCardHeights() {
+            // Reset all card heights to auto first
+            $('.uni-card').css('height', 'auto');
+    
+            // Find the tallest card
+            var tallestCard = 0;
+            $('.uni-card').each(function() {
+                if ($(this).height() > tallestCard) {
+                    tallestCard = $(this).height();
+                }
+            });
+    
+            // Set all cards to the height of the tallest card
+            $('.uni-card').height(tallestCard);
+        }
+    
+        // Call the function initially
+        adjustCardHeights();
+    });
+</script>
 <body>
     <!-- ======= Header ======= -->
     <header id="header" class="fixed-top d-flex align-items-center">
@@ -445,8 +468,8 @@
                 <div class="section-title" data-aos="fade-up">
                     <h2 class="int-header">How to Book an Appointment</h2>
                 </div>
-                <div class="video-container" style="width: 77%; margin: auto; height: 36.5vw; position: relative; overflow: hidden;">
-                    <iframe src="https://www.youtube.com/embed/FrHb5XglLBY?enablejsapi=1&modestbranding=1&showinfo=0&controls=1&rel=0" frameborder="0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+                <div class="appt-container">
+                    <iframe src="https://www.youtube.com/embed/FrHb5XglLBY?enablejsapi=1&modestbranding=1&showinfo=0&controls=1&rel=0" frameborder="0" class="appt-video"></iframe>
                 </div>
             </div>
         </section>     
